@@ -76,6 +76,7 @@ services:
       ports:
         - 8211:8211/udp
         - 27015:27015/udp
+        # - 8212:8212/tcp  # Port for REST API if REST_API_ENABLED: true
       environment:
          PUID: 1000
          PGID: 1000
@@ -108,6 +109,7 @@ services:
       ports:
         - 8211:8211/udp
         - 27015:27015/udp
+        # - 8212:8212/tcp  # Port for REST API if REST_API_ENABLED: true
       env_file:
          -  .env
       volumes:
@@ -576,12 +578,13 @@ The manifest corresponds to the release date/update versions. Manifests can be f
 
 | Version | Manifest ID         |
 |---------|---------------------|
-| 1.3.0   | 1354752814336157338 |
-| 1.4.0   | 4190579964382773830 |
-| 1.4.1   | 6370735655629434989 |
-| 1.5.0   | 3750364703337203431 |
-| 1.5.1   | 2815085007637542021 |
-| 2.0.6   | 1677469329840659324 |
+| 0.1.3.0   | 1354752814336157338 |
+| 0.1.4.0   | 4190579964382773830 |
+| 0.1.4.1   | 6370735655629434989 |
+| 0.1.5.0   | 3750364703337203431 |
+| 0.1.5.1   | 2815085007637542021 |
+| 0.2.0.6   | 1677469329840659324 |
+| 0.2.1.0   | 8977386334474359538 |
 
 ## Reporting Issues/Feature Requests
 
